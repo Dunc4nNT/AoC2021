@@ -1,7 +1,9 @@
 import sys
 import pathlib
 
-RUST_TEMPLATE = """fn process_data(input: &str) -> usize {
+RUST_TEMPLATE = """use std::time::Instant;
+
+fn process_data(input: &str) -> usize {
 
 }
 
@@ -17,8 +19,14 @@ fn part1(input: &str) -> usize {
 fn main() {
     let input: &str = include_str!("input.txt");
 
-    println!("Day {{day}}, Part 1: {:?}", part1(input));
-    // println!("Day {{day}}, Part 2: {:?}", part2(input));
+    let time1 = Instant::now();
+    let solution1 = part1(input);
+    let elapsed1 = time1.elapsed();
+    println!("Day {{day}} Part 1: {:?} ({:?})", solution1, elapsed1);
+    // let time2 = Instant::now();
+    // let solution2 = part2(input);
+    // let elapsed2 = time2.elapsed();
+    // println!("Day {{day}}, Part 2: {:?} ({:?})", solution2, elapsed2);
 }
 """
 
