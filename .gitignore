@@ -255,3 +255,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# Added by cargo
+
+/target
