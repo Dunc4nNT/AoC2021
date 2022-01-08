@@ -53,6 +53,7 @@ if __name__ == "__main__":
     origami2 = TransParentOrigami("input.txt")
     origami2.fold_all()
     paper = origami2.draw()
+    print("Part 2:")
     for y in range(len(paper)):
         part2 = ""
         for x in range(len(paper[0])):
