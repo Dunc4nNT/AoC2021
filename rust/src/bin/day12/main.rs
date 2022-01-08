@@ -74,9 +74,9 @@ fn main() {
     let time1 = Instant::now();
     let solution1 = part1(input);
     let elapsed1 = time1.elapsed();
-    println!("Day 9, Part 1: {:?} ({:?})", solution1, elapsed1);
+    println!("Day 12, Part 1: {:?} ({:?})", solution1, elapsed1);
     let time2 = Instant::now();
     let solution2 = part2(input);
     let elapsed2 = time2.elapsed();
-    println!("Day 9, Part 2: {:?} ({:?})", solution2, elapsed2);
+    println!("Day 12, Part 2: {:?} ({:?})", solution2, elapsed2);
 }
